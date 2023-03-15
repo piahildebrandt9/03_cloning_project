@@ -4,46 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Trello Board</title>
 </head>
 <body>
 
     <!-- header -->
-        <!-- Boards button -->
-        <button> <img src="./assets/trello_logo.png" alt="trello logo in smalla and white">Boards </button>
-        <!-- search input button -->
-        <button> <input type="text"> <img src="./assets/lupe.png" alt="loupe icon to signalize search function"> </button>
-        <!-- Trello logo -->
-        <img src="./assets/trello_full_logo.jpg" alt="trello logo and letters">
-        <!-- + button -->
-        <button>+</button>
-        <!-- chanelle button -->
-        <button> <img src="./assets/person1.jpg" alt="picture of the owner of the trello page">Channelle </button>
-        <!-- information button -->
-        <button><img src="./assets/information.png" alt="information icon on a button"></button>
-        <!-- notification button -->
-        <button><img src="./assets/notification.jpg" alt="notification icon in a button"></button>
-        <!-- settings button -->
-        <button><img src="./assets/settings.png" alt="settings icon in a button"></button>
+    <header >
+        <!-- left nav -->
+        <div id = "leftnav">
+            <!-- button boards -->
+            <button>
+                <!-- icon trello -->
+                <img src="./assets/trello_logo.png" alt="trello logo white" id ="trello_logo">
+                <!-- boards -->
+                Boards
+            </button>
+            <!-- button search -->
+            <button>
+                <!-- input -->
+                <input type="text">
+                <!-- search icon -->
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </div>
+        <!-- trello logo -->
+        <img src="./assets/trello_full_logo.jpg" alt="trello logo and name" id="trello_full_logo">
+        <!-- right nav -->
+        <nav>
+            <!-- plus button -->
+            <button>
+                <span class="material-symbols-outlined">add</span>
+            </button>
+            <!-- profile button -->
+            <button>
+                <!-- picture -->
+                <img src="./assets/person1.jpg" alt="profile picture of owner" id ="profilepic">
+                <!-- name -->
+                Channelle
+            </button>
+            <!-- information icon button -->
+            <button>
+                <span class="material-symbols-outlined">info</span>
+            </button>
+            <!-- notification button -->
+            <button>
+                <span class="material-symbols-outlined">notifications</span>
+            </button>
+            <!-- settings icon button -->
+            <button>
+                <span class="material-symbols-outlined">settings</span>
+            </button>
+        </nav>
     <!-- end header -->
+    </header>
 
     <!-- overview  -->
-        <!-- logo company overview -->
-        <!-- logo travidux-->
-        <!-- star -->
-        <!-- logo team visible -->
-        <!-- logo and join me link -->
-        <!-- three dots -->
-        <!-- show menu link -->
+    <section id = "overview">
+        <!-- left bar -->
+        <div id ="overview_leftbar">
+            <!-- logo company overview -->
+            <div class = "overview_leftbar_item">
+                <!-- image -->
+                <img src="./assets/airplane.jpg" alt="airplane icon">
+                <!-- text -->
+                Company Overview
+            </div>
+            <!-- logo travidux-->
+            <div class = "overview_leftbar_item" >
+                <span class="material-symbols-outlined">cases</span>
+                <p>Travidux</p>
+            </div>
+            <!-- star -->
+            <div class = "overview_leftbar_item">
+                <span class="material-symbols-outlined">star</span>
+            </div>
+            <!-- logo team visible -->
+            <div  class = "overview_leftbar_item">
+                <span class="material-symbols-outlined">group</span>
+                <p>Team Visible</p>
+            </div>
+        </div>
+
+        <!-- right bar -->
+        <div id="overview_rightbar">
+            <!-- logo and join me link -->
+            <div class="overview_rightbar_item">
+                <span class="material-symbols-outlined">forum</span>
+                <p><a href="">join me</a></p>
+            </div>
+            <!-- three dots  show menu-->
+            <div class="overview_rightbar_item">
+                <span class="material-symbols-outlined">more_horiz</span>
+                <p><a href="">Show Menu</a></p>
+            </div>
+            
+        </div>
      <!-- end overview -->
+    </section>
 
      <!-- boards screen -->
+     <section id="boards">
         <!--Teams -->
+        <article id = "Teams">
+            <h1>Teams</h1>
+            <div class ="teams_item">
+                <p>How To Use this Board</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class ="teams_item">
+                <p>Product</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class ="teams_item">
+                <p>Marketing</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class ="teams_item">
+                <p>Sales</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class ="teams_item">
+                <p>Support</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div class ="teams_item">
+            <div class ="teams_item">
+                <p>People</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class ="teams_item">
+                <p>IT</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <input  type="text" placeholder="Add a card..." class = "addACart">
+
+        </article>
+        
         <!-- priorities -->
+        <article id = "Priorities">
+            <h1>Priorities</h1>
+            <div class = "priorities_item">
+                <p>Increase sales revenue by 30% in Q3</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "priorities_item">
+                <p>Launch first iternational expansion</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "priorities_item">
+                <p>Test new messaging for SMB market</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <input  type="text" placeholder="Add a card..." class = "addACart">
+        </article>
+
         <!-- current projects -->
+        <article id="current_projects">
+            <h1>Current Projects</h1>
+            <div class = "cur_projects_item">
+                <p>Wesbsite Redesign</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "cur_projects_item">
+                <p>Ship IOS App</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "cur_projects_item">
+                <p>Analytics Data</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "cur_projects_item">
+                <p>Increase conversion rate by 20% by Q3</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "cur_projects_item">
+                <p>Develop Engineering Blog</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "cur_projects_item">
+                <p>Brand Guidelines</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <input  type="text" placeholder="Add a card..." class = "addACart">
+        </article>
+
         <!-- completed projects -->
+        <article id = "completed_projects">
+            <h1>Completed Projects</h1>
+            <div class = "com_projects_item">
+                <p>Social Media Campaign</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <div class = "com_projects_item">
+                <p>Update Help Documentation</p>
+                <span class="material-symbols-outlined">menu</span>
+            </div>
+            <input  type="text" placeholder="Add a card..." class = "addACart">
+
+        </article>
         <!-- one more board -->
+        <article id ="extra board">
+            <h1>Extra Board</h1>
+            <input  type="text" placeholder="Add a card..." class = "addACart">
+
+        </article>
     <!-- end boards screen -->
+    </section>
     
 </body>
 </html>
