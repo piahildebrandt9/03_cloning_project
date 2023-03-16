@@ -204,6 +204,7 @@ header input:focus {
     top:14vh;
     height:80vh;
     
+    
 }
 
 #boards article{
@@ -266,12 +267,38 @@ ul{
     margin-top:5px;
 }
 
-#boards span {
-    color:lightgrey;
+#boards img{
+    width:70%;
+    grid-column:7;
+
 }
-/* #extraboard h1 input{
+
+.iconbar{
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    /* grid-template-rows:1fr; */
+    font-size:small;
+    width:100%;
+    gap:10px;
+    color:lightgrey;
     
-} */
+}
+.iconbar span{
+    display:flex;
+    white-space:nowrap;
+    align-items:center;
+
+    
+    
+}
+.iconbar span span {
+    margin:2px;
+}
+i{
+    font-size:150%;
+}
+
+
 .yellow{
     background-color:yellow;
 }
@@ -299,6 +326,7 @@ ul{
 }
 .pink{
     background-color:pink;
+    color:white;
 }
 .darkgrey{
     background-color:darkgrey;
