@@ -157,6 +157,7 @@ header input:focus {
 }
 .overview_leftbar_item{
     display:flex;
+   
     margin:10px;
     align-items:center;
     font-weight:lighter;
@@ -166,6 +167,7 @@ header input:focus {
 #companyoverview{
     font-size:20px;
     font-weight:bold;
+    margin:0;
 }
 
 
@@ -191,6 +193,10 @@ header input:focus {
     color:white;
     font-size:14px;
 }
+p{
+    margin:0;
+}
+
 #airplane{
     height:80%;
 }
@@ -327,6 +333,7 @@ ul{
 }
 .iconbar span span {
     margin:2px;
+    
 }
 i{
     font-size:150%;
