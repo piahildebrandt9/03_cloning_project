@@ -262,6 +262,12 @@ ul{
     border-color:transparent;
     border:0;
     outline:none;
+    font-size:large;
+    margin-top:5px;
+}
+
+#boards span {
+    color:lightgrey;
 }
 /* #extraboard h1 input{
     
